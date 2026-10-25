@@ -1,0 +1,21 @@
+# Build output
+build/
+build-*/
+cmake-build-*/
+.pio/
+compile_commands.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Never commit a signing key
+*.pem
+!*.pub.pem
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
