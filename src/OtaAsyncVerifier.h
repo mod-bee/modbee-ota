@@ -18,8 +18,8 @@
 #include <atomic>
 
 /**
- * Runs a slow OtaVerifier on a worker. A P-256 check through wolfSSL takes
- * about a second on an ESP32: never in a PLC scan.
+ * Runs a slow OtaVerifier on a worker. A P-256 check takes ~160 ms to a
+ * second on an ESP32: never in a PLC scan.
  *
  *   OtaEcdsaP256Verifier ecdsa(key);
  *   OtaAsyncVerifier verifier(ecdsa);

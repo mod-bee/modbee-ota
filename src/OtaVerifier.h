@@ -13,8 +13,8 @@
  * Kept behind an interface so the core carries no crypto library, and a
  * project that does not sign pays nothing: no verifier object, nothing linked.
  *
- *   OtaEcdsaP256Verifier   ECDSA P-256 through wolfSSL - free where the
- *                          ModBee MQTT library already links it for TLS
+ *   OtaEcdsaP256Verifier   ECDSA P-256 through the ESP32 core's mbedTLS (its
+ *                          TLS links the arithmetic already), else wolfSSL
  *   OtaEd25519Verifier     Ed25519 through the ESP32 core's libsodium
  *
  * Ok: signed by the key. BadSignature: not. Pending: still working - asked
